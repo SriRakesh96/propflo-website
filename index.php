@@ -1,7 +1,7 @@
 <?php
-   session_start();
+   //session_start();
    
-   include('offline.php');
+  // include('offline.php');
    
    include('doctype.php');
    
