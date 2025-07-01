@@ -1,0 +1,272 @@
+﻿
+
+
+.fea-tag { 
+display: inline-block; 
+border: 1px solid #08cf65;
+ border-radius: 30px;
+ padding: 3px 8px;
+margin-bottom:10px;
+ /* Optional: Add padding for better aesthetics */ }
+
+
+#feature-banner{
+      padding-top:220px;
+      }
+      @media only screen and (max-width: 600px) {
+      #feature-banner{
+      padding-top:145px;
+      }
+      .btn-propflo2{
+      border:1px solid #08CF65;
+      color: var(--white);
+      border-radius: 12px;
+      padding: 13px 13px;
+      }
+      }
+      .btn-propflo2{
+      border:1px solid #08CF65;
+      color: var(--white);
+      border-radius: 12px;
+      padding: 12px 15px;
+      }
+      .btn-nrml{
+      border:1px solid #D1D5DB;
+      padding: 12px 15px;
+      border-radius: 12px;
+      color:#6B7280;
+      margin-right:15px;
+      }
+      .banner-three-area    .banner-tag{
+      text-align: center;
+      border: 1px solid #08CF65;
+      padding: 5px 5px;
+      color:#fff;
+      margin-bottom: 15px;
+      width: 350px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 50px;
+      }
+      @media only screen and (max-width: 768px) {
+      .banner-three-area  .banner-tag{
+      width: 80% !important;
+      }
+      }
+      @media only screen and (max-width: 900px) {
+      .ban-img2 {
+      margin-top: 10px !important;
+      }
+      }
+      .custom-section {
+      border-bottom: 2px solid #007bff;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      }
+      .custom-section-item {
+      font-weight: 400;
+      color: #4A4A4A;
+      text-decoration: none;
+      }
+      .custom-section-item.active {
+      font-weight: bold;
+      text-decoration: underline;
+      }
+      .lm-menu{
+      padding-top: 140px;
+      }
+      #lmen-item{
+      width:60% !important;
+      }
+      .banner-three-area {
+      padding-top: 150px !important;
+      }
+      .banner-three__content h1 {
+      font-size: 45px !important;
+	text-transform: capitalize !important;  
+
+      }
+      .big-head{
+      line-height:60px !important;
+      }
+      @media only screen and (max-width: 600px) {
+      .banner-three__content h1 {
+      font-size: 45px !important; 
+      }
+      .lm-menu{
+      padding-top: 90px;
+      }
+      #lmen-item{
+      width:100% !important; 
+      }
+      .banner-three-area {
+      padding-top: 150px !important;
+      }
+      .big-head{
+      line-height:40px !important;
+      }
+      }
+      .custom-menu {
+      display: flex;
+      gap: 30px;
+      white-space: nowrap;
+      overflow-x: auto;
+      scrollbar-width: none;
+      flex-grow: 1;
+      position: relative;
+      justify-content: center;
+      }
+      .custom-menu::-webkit-scrollbar {
+      display: none; /* Hide scrollbar in Chrome, Safari */
+      }
+      .custom-menu a {
+      text-decoration: none;
+      color: #333;
+      font-size: 16px;
+      white-space: nowrap;
+      padding: 5px 0;
+      }
+      /* Styling for right arrow */
+      .custom-arrow-right {
+      display: none; /* Hidden by default */
+      cursor: pointer;
+      padding-left: 10px;
+      font-size: 30px;
+      color: #333;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%); /* Center vertically within the menu */
+      background: linear-gradient(to right, transparent, #fff); /* Fading effect */
+      }
+      /* Show the arrow in mobile view */
+      @media (max-width: 768px) {
+      .custom-arrow-right {
+      background: #fff;
+      margin-top: 3px;
+      margin-right: 5px;
+      display: block;
+      z-index: 9999;
+      }
+      .custom-menu {
+      justify-content: flex-start;
+      }
+      }
+      .lm-menu {
+      position: fixed; /* Keeps the menu fixed */
+      top: 120px; /* Default top position */
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      z-index: 998;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: padding 0.3s ease; /* Smooth transition for padding change */
+      padding: 160px 0 0 0; /* Default padding for larger screens */
+      }
+      .lm-menu {
+      /*padding: 100px 20px 20px 20px; */
+
+      display:none !important;
+      }
+      @media only screen and (max-width: 600px) {
+      .header-area.menu-fixed {
+      display: block !important;
+      box-shadow: none;
+      }
+      .lm-menu {
+      /*padding: 100px 20px 20px 20px; */
+
+      display:none !important;
+      }
+      }
+      @media (min-width: 2000px) {
+      .scroll-section {
+      height: 40vh !important;
+      }
+      .scroll-item {
+      height: 40vh !important;
+      }
+      }
+      .custom-menu a:hover {
+      text-decoration: underline; 
+      transform: scale(1.1); /* Slight zoom-in effect */
+      color: #08CF65; 
+      }
+      /* Underline the first link by default */
+      .custom-menu a:first-child {
+      text-decoration: underline; 
+      }
+      .scroll-row{
+      display: flex;
+      align-items: center;
+      }
+      .img-fluid2{
+      width:100%;
+      }
+      #scroll-item{
+      margin:40px 0px;
+      }
+      @media only screen and (max-width: 600px) {
+      .div-cont{
+      margin-top:20px;
+      }
+      #mob-scroll{
+      display:block !important;
+      }
+      #web-scroll{
+      display:none !important;
+      }
+      }
+      #mob-scroll{
+      display:none;
+      }
+      /* Sticky image section */
+      .image-section {
+      position: sticky;
+      top: 0;
+      height: 70vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+      .image-section img {
+      max-height: 90%;
+      max-width: 90%;
+      object-fit: contain;
+      }
+      /* Full page sections */
+      .content-section {
+      height: 50vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      }
+      .content-section h3 {
+      margin-bottom: 15px;
+      }
+      .container-fluid {
+      display: flex;
+      }
+      .col-md-6 {
+      padding: 0;
+      }
+      #scrl-btn{
+      margin-top:-50px;
+      }
+      @media only screen and (max-width: 600px) {
+      #scrl-btn{
+      margin-top:0px;
+      }
+      }
+      .lead-management{
+      margin:30px 0px;
+      }
+      @media only screen and (max-width: 600px) {
+      .lead-management{
+      margin:20px 0px;
+      }  
+      .lmcont h3{
+      margin-top:15px;
+      }
+      }

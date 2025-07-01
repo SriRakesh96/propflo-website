@@ -1,0 +1,49 @@
+RewriteEngine On
+
+# Redirect specific URLs to their new destinations
+RewriteCond %{REQUEST_URI} ^/solutions/customer-delight$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/greeting-automations$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/drip-campaigns$
+RewriteRule ^ https://www.propflo.ai/features/marketing-automation [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/workflow-automation$
+RewriteRule ^ https://propflo.ai/features/sales-management [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/lead-management$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/pre-sales$
+RewriteRule ^ https://propflo.ai/features/lead-management [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/balance$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/sold$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/pricing-sheet$
+RewriteRule ^ https://propflo.ai/features/inventory-management [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/milestones$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/updates$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/documents$
+RewriteRule ^ https://propflo.ai/features/post-sales-management [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/owner-tracking$ [OR]
+RewriteCond %{REQUEST_URI} ^/solutions/documentation$
+RewriteRule ^ https://propflo.ai/features/customer-app [R=301,L]
+
+RewriteCond %{REQUEST_URI} ^/solutions/leads$
+RewriteRule ^ https://propflo.ai/solutions/channel-partner [R=301,L]
+
+# Rewrite rule for blog articles with hyphens in title
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^blog/([^/]+)/?$ blog_template.php?title=$1 [L,QSA]
+
+# Rewrite rule to handle .php and .html extensions
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+
+# Custom 404 error page URL
+ErrorDocument 404 https://propflo.ai/404
+
