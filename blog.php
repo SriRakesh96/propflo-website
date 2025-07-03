@@ -18,8 +18,14 @@
    $offset = ($page - 1) * $itemsPerPage;
    
    // Fetch the specific news articles from the database with LIMIT and OFFSET
-   $fetch_article = "SELECT * FROM propflo_blogs WHERE act='1' ORDER BY id DESC LIMIT $itemsPerPage OFFSET $offset";
-   $fetch_article_query = mysqli_query($conn, $fetch_article);
+ $fetch_article = "
+    SELECT * FROM propflo_blogs 
+    WHERE act='1'
+    ORDER BY 
+        (url = 'top-real-estate-crm-softwares-in-india') DESC, 
+        id DESC 
+    LIMIT $itemsPerPage OFFSET $offset";
+     $fetch_article_query = mysqli_query($conn, $fetch_article);
    
    
    include('doctype.php');
@@ -99,7 +105,7 @@
                          $news_content = $row['news_description'];
                          $news_img = $row['news_img'];
                          $news_cat = $row['category'];
-                         $news_date = $row['news_date'];
+                         
                          $add_by = $row['added_by'];
                          $add_on = date("d-m-Y", strtotime($row['added_on']));
                      

@@ -27,7 +27,7 @@
        $news_img = $row['news_img'];
        
        $news_cat = $row['category'];
-      $news_date = $row['news_date'];
+
       $schmea=$row['head_scripts'];
    
        $add_by = $row['added_by'];
@@ -51,11 +51,41 @@
        // Combine them to get the full URL
        $fullUrl = $protocol . '://' . $host . $path;
    
-       if($fullUrl =="https://www.propflo.ai/blog/top-10-best-real-estate-crm-software-for-developers-brokers-in-india"){
-   
-         echo "<meta http-equiv=\"refresh\" content=\"0;url=https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india\" />";
-   
-       }
+   if ($fullUrl == "https://www.propflo.ai/blog/top-10-best-real-estate-crm-software-for-developers-brokers-in-india") {
+    echo "<meta http-equiv=\"refresh\" content=\"0;url=https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india\" />";
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/real-estate-crm-features-checklist") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/real-estate-crm-for-teams") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/real-estate-crm-vs-generic-crm") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/most-preferred-real-estate-crms-in-india") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/top-crm-for-real-estate-agents-in-india") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/crm-for-real-estate-professionals") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/capabilities-of-real-estate-crm") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
+elseif ($fullUrl == "https://www.propflo.ai/blog/training-your-sales-team-to-harness-the-power-of-a-real-estate-crm") {
+    header("Location: https://www.propflo.ai/blog/top-real-estate-crm-softwares-in-india");
+    exit;
+}
    ?>
 <?php
    include('doctype.php');

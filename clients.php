@@ -59,6 +59,19 @@
                 <div class="marquee__slide brand__slider">
                     <div class="marquee__item-wrp">
                         <!-- Logo with link -->
+                          <div class="marquee__item">
+                            <img src="assets/img/clients/cadence.png" alt="Cadence" width="280px" />
+                        </div>
+
+                         <div class="marquee__item">
+                            <img src="assets/img/clients/ekatva.png" alt="ekatva" width="280px" />
+                        </div>
+
+                         <div class="marquee__item">
+                            <img src="assets/img/clients/atmos.png" alt="Atmos" width="280px" />
+                        </div>
+
+
                         <div class="marquee__item">
                             <img src="assets/img/clients/prosperiti.png" alt="Prosperiti" width="280px" />
                         </div>
